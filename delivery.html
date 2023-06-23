@@ -37,16 +37,18 @@
   </header>
 
   <main>
-    <h1>Delivery</h1>
-    <h1>Order Now</h1>
-    <div class="delivery-logo">
-      <a href=""><img src="./Photos/delivery/grabfood-logo.png" alt="grabfood-logo" width="186px"></a>
-      <a href=""><img src="./Photos/delivery/foodpanda-logo.png" alt="foodpanda-logo" width="175px"></a>
-      <a href=""><img src="./Photos/delivery/pickaroo-logo.png" alt="pickaroo-logo" width="120px"></a>
-    </div>
-
-    <div>
-      <a href="./menu.html">Back To Menu</a>
+    <div class="delivery-container container-fluid d-flex flex-column align-items-center bg-light">
+      <h1>Delivery</h1>
+      <div class="order-wrapper container-fluid d-flex flex-column align-items-center bg-light">
+        <h1>Order Now</h1>
+        <div class="delivery-logo container d-flex flex-row flex-wrap justify-content-center align-items-center">
+          <a href="https://food.grab.com/ph/en/" target="_blank" title="Go to Grab Food"><img src="./Photos/delivery/grabfood-logo.png" alt="grabfood-logo" width="186px"></a>
+          <a href="https://www.foodpanda.ph" target="_blank" title="Go to Food Panda" ><img src="./Photos/delivery/foodpanda-logo.png" alt="foodpanda-logo" width="175px"></a>
+          <a href="https://pickaroo.com" target="_blank" title="Go to Pickaroo"><img src="./Photos/delivery/pickaroo-logo.png" alt="pickaroo-logo" width="120px"></a>
+          <a href="https://booky.ph" target="_blank" title="Go to Booky"><img src="./Photos/delivery/booky-logo.png" alt="booky-logo" width="130px"></a>
+        </div>
+      </div>      
+      <button class="button-menu" type="button" onclick="location.href='./menu.html'">Back to menu</button>      
     </div>
   </main>
   

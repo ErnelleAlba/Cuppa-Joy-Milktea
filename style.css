@@ -56,6 +56,55 @@ main {
   background-color: aqua;
 
 }
+.order-wrapper > h1 {
+  text-transform: uppercase;
+  font-family: var(--fstyle);
+  letter-spacing: 5px;
+}
+
+.delivery-logo > a > img {
+  margin: 20px 70px 20px 70px;
+  padding: auto;
+}
+
+.button-menu {  
+  position: relative;
+  border: 1px;
+  border-radius: 10px;
+  background: #00acee;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: var(--fstyle);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 30px;
+  z-index: 1;
+}
+.button-menu:hover {
+  color: black;
+}
+
+.button-menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: white;
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.button-menu:hover::before,
+.button-menu:focus::before {
+  transform: scaleX(1);
+  
+}
+
 /* CONTACT US PAGE */
 .contact {
   position: relative;
@@ -143,13 +192,24 @@ main {
 }
 
 .message-form > form > .input-box > input[type="submit"] {
+  position: relative;
+  border: 1px;
+  border-radius: 5px;
   width: 150px;
   background: #00acee;
   color: white;
-  border: none;
-  cursor: pointer;
+  font-family: var(--fstyle);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 0;
 }
-
+  
+.message-form > form > .input-box > input[type="submit"]:hover,
+.message-form > form > .input-box > input[type="submit"]:focus { 
+  background-color: white;
+  color: black;
+  transform: scale(1.2)
+}
 
 /* FOOTER */
 .follow-us-header {
@@ -196,7 +256,12 @@ main {
 }
 
 .icon-instagram:hover {
-  background: radial-gradient(circle at 30% 100%, #feda75 10%, #fa7e1e 30%, #d62976 62%, #962fbf 85%, #4f5bd5);
+  background: radial-gradient(circle at 30% 100%,
+   #feda75 10%, 
+   #fa7e1e 30%, 
+   #d62976 62%, 
+   #962fbf 85%, 
+   #4f5bd5);
   outline-color: #962fbf;
 }
 

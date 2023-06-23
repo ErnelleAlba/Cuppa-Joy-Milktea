@@ -54,7 +54,100 @@ navbar-nav {
 
 main {
   background-color: aqua;
+
+}
+/* CONTACT US PAGE */
+.contact {
+  position: relative;
+  background-color: #00acee;
+}
+
+/* CONTACT INFO STYLING */
+.contact-box{
+  position: relative;
+  padding: 15px 0;
+}
+
+.contact-box > .text {
+  margin-left: 15px;
+  font-size: 18px;  
+}
+
+.contact-box > .text > a {
+  text-decoration: none;
+  color: black;
+}
+
+.icon-contact {
+  display: inline-flex;
+  width: 45px;
+  height: 45px; 
+  text-decoration: none;
+  outline: 2px solid black;
+  border-radius: 50%;
+  background: white;
+}
+
+.icon-contact > i {
+  margin: auto;
+}
+
+/* MESSAGE FORM STYLING */
+.message-form {
+  margin-bottom: 30px;
+  padding: 40px;
+  background-color: white;
+}
+
+.message-form > h2,
+.message-form > p {
   font-family: var(--fstyle);
+  text-transform: uppercase;
+}
+
+.message-form > form > .input-box {
+  position: relative;
+  margin-top: 10px;
+}
+
+.message-form > form > .input-box > input,
+.message-form > form > .input-box > textarea {
+  width: 100%;
+  padding: 5px 0;
+  margin: 10px 0;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  resize: none;
+}
+
+.message-form > form > .input-box > span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  margin: 10px 0;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+  color:#666;
+}
+
+.message-form > form > .input-box > input:focus ~ span,
+.message-form > form > .input-box > input:valid ~ span,
+.message-form > form > .input-box > textarea:focus ~ span,
+.message-form > form > .input-box > textarea:valid ~ span {
+  color: red;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.message-form > form > .input-box > input[type="submit"] {
+  width: 150px;
+  background: #00acee;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 

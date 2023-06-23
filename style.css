@@ -4,25 +4,19 @@
   --fstyle:"Concert One";
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 /* HEADER */
 header { 
   background-color: burlywood;
   position: sticky;
   top: 0;
-  z-index: 10;  
+  z-index: 10;   
 }
+
 
 /* NAVIGATION MENU */
 navbar-nav {
   position: relative;
 }
-
-
 
 .nav-item > a {
   position: relative;
@@ -32,12 +26,12 @@ navbar-nav {
   letter-spacing: 0.1em;  
 }
 
-.nav-item > a:hover {
-  color: black;
-}
-
 .nav-title {
   font-size: 1.5em;  
+}
+
+.nav-item > a:hover {
+  color: black;
 }
 
 .nav-item > a::before {
@@ -64,15 +58,12 @@ main {
 }
 
 
-
 /* FOOTER */
-.quickNav-footer > ul > li > a {
-  text-decoration: none;
-  color: white;
+.follow-us-header {
   font-family: var(--fstyle);
-  letter-spacing: 0.1em;
+  letter-spacing: 5px;
 }
-
+/* SOCIAL MEDIA ICONS STYLING */
 .icon {
   display: inline-flex;
   width: 45px;
@@ -80,8 +71,76 @@ main {
   text-decoration: none;
   outline: 2px solid white;
   border-radius: 50%;
+  transition-property: outline-offset, outline-color,backfround-color,background;
+  transition-duration: 0.25s;
+}
+
+.icon:hover{
+  outline-offset: 4px;
 }
 
 .icon > i {
   margin: auto;
+}
+
+.icon:hover > i {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+
+.icon-instagram:hover {
+  background: radial-gradient(circle at 30% 100%, #feda75 10%, #fa7e1e 30%, #d62976 62%, #962fbf 85%, #4f5bd5);
+  outline-color: #962fbf;
+}
+
+.icon-facebook:hover {
+  background-color: #3b5998;
+  outline-color: #3b5998;
+}
+
+.icon-twitter:hover {
+  background-color: #00acee;
+  outline-color: #00acee;
+}
+
+.icon-tiktok:hover {
+  background-color: black;
+  outline-color: white;
+}
+
+.icon-tiktok > i:hover {
+  filter: drop-shadow(2px 2px #f22d52);  
+}
+
+/* QUICK NAVIGATION STYLING */
+.quickNav-footer > div > ul > li > a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-family: var(--fstyle);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding: 5px 5px 5px 10px;   
+  border: 1px;
+  border-radius: 10px;
+}
+
+.quickNav-footer > div > ul > li > a:hover{
+  background: white;
+  color: black;
 }

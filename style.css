@@ -62,9 +62,7 @@ navbar-nav {
   letter-spacing: 2px;
 }
 
-.our-story-title > hr,
-.mission-title > hr,
-.vision-title > hr {
+hr {
   height: 10px;
   background-color: red;
   border: none;
@@ -77,6 +75,23 @@ navbar-nav {
   font-size: 18px;
 }
 
+/* MENU PAGE */
+.btp-btn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border: none;
+}
+.card {
+  border: none;
+}
+
+.card-body > hr {
+  height: 2px;
+  background-color: black;
+  border: none;
+  width: 100%;
+}
 /* DELIVERY PAGE */
 .order-wrapper > h1 {
   text-transform: uppercase;

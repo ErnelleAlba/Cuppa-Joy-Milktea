@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
 
 :root {
-  --fstyle:"Concert One";
+  --fstyle1: "Concert One";
+  --fstyle2: "Cabin";
 }
 
 /* HEADER */
-header { 
+header {
   background-color: burlywood;
   position: sticky;
   top: 0;
-  z-index: 10;   
+  z-index: 10;
 }
-
 
 /* NAVIGATION MENU */
 navbar-nav {
@@ -22,12 +23,12 @@ navbar-nav {
   position: relative;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.5);
-  font-family: var(--fstyle);
-  letter-spacing: 0.1em;  
+  font-family: var(--fstyle1);
+  letter-spacing: 0.1em;
 }
 
 .nav-title {
-  font-size: 1.5em;  
+  font-size: 1.5em;
 }
 
 .nav-item > a:hover {
@@ -49,16 +50,37 @@ navbar-nav {
 
 .nav-item > a:hover::before {
   transform: scaleX(1);
-  transform-origin: left;  
-} 
-
-main {
-  background-color: aqua;
-
+  transform-origin: left;
 }
+
+/* OUR STORY PAGE */
+.our-story-title > h1,
+.mission-title > h1,
+.vision-title > h1 {
+  font-family: var(--fstyle1);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.our-story-title > hr,
+.mission-title > hr,
+.vision-title > hr {
+  height: 10px;
+  background-color: red;
+  border: none;
+}
+
+.our-story-text > p,
+.mission-text > p,
+.vision-text > p {
+  font-family: var(--fstyle2);
+  font-size: 18px;
+}
+
+/* DELIVERY PAGE */
 .order-wrapper > h1 {
   text-transform: uppercase;
-  font-family: var(--fstyle);
+  font-family: var(--fstyle1);
   letter-spacing: 5px;
 }
 
@@ -67,7 +89,7 @@ main {
   padding: auto;
 }
 
-.button-menu {  
+.button-menu {
   position: relative;
   border: 1px;
   border-radius: 10px;
@@ -75,7 +97,7 @@ main {
   color: white;
   padding: 10px 20px;
   font-size: 20px;
-  font-family: var(--fstyle);
+  font-family: var(--fstyle1);
   letter-spacing: 2px;
   text-transform: uppercase;
   margin: 30px;
@@ -102,7 +124,6 @@ main {
 .button-menu:hover::before,
 .button-menu:focus::before {
   transform: scaleX(1);
-  
 }
 
 /* CONTACT US PAGE */
@@ -112,14 +133,14 @@ main {
 }
 
 /* CONTACT INFO STYLING */
-.contact-box{
+.contact-box {
   position: relative;
   padding: 15px 0;
 }
 
 .contact-box > .text {
   margin-left: 15px;
-  font-size: 18px;  
+  font-size: 18px;
 }
 
 .contact-box > .text > a {
@@ -130,7 +151,7 @@ main {
 .icon-contact {
   display: inline-flex;
   width: 45px;
-  height: 45px; 
+  height: 45px;
   text-decoration: none;
   outline: 2px solid black;
   border-radius: 50%;
@@ -150,7 +171,7 @@ main {
 
 .message-form > h2,
 .message-form > p {
-  font-family: var(--fstyle);
+  font-family: var(--fstyle1);
   text-transform: uppercase;
 }
 
@@ -179,7 +200,7 @@ main {
   font-size: 16px;
   pointer-events: none;
   transition: 0.5s;
-  color:#666;
+  color: #666;
 }
 
 .message-form > form > .input-box > input:focus ~ span,
@@ -198,37 +219,38 @@ main {
   width: 150px;
   background: #00acee;
   color: white;
-  font-family: var(--fstyle);
+  font-family: var(--fstyle1);
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 0;
 }
-  
+
 .message-form > form > .input-box > input[type="submit"]:hover,
-.message-form > form > .input-box > input[type="submit"]:focus { 
+.message-form > form > .input-box > input[type="submit"]:focus {
   background-color: white;
   color: black;
-  transform: scale(1.2)
+  transform: scale(1.2);
 }
 
 /* FOOTER */
 .follow-us-header {
-  font-family: var(--fstyle);
+  font-family: var(--fstyle1);
   letter-spacing: 5px;
 }
 /* SOCIAL MEDIA ICONS STYLING */
 .icon {
   display: inline-flex;
   width: 45px;
-  height: 45px; 
+  height: 45px;
   text-decoration: none;
   outline: 2px solid white;
   border-radius: 50%;
-  transition-property: outline-offset, outline-color,backfround-color,background;
+  transition-property: outline-offset, outline-color, backfround-color,
+    background;
   transition-duration: 0.25s;
 }
 
-.icon:hover{
+.icon:hover {
   outline-offset: 4px;
 }
 
@@ -256,12 +278,14 @@ main {
 }
 
 .icon-instagram:hover {
-  background: radial-gradient(circle at 30% 100%,
-   #feda75 10%, 
-   #fa7e1e 30%, 
-   #d62976 62%, 
-   #962fbf 85%, 
-   #4f5bd5);
+  background: radial-gradient(
+    circle at 30% 100%,
+    #feda75 10%,
+    #fa7e1e 30%,
+    #d62976 62%,
+    #962fbf 85%,
+    #4f5bd5
+  );
   outline-color: #962fbf;
 }
 
@@ -281,7 +305,7 @@ main {
 }
 
 .icon-tiktok > i:hover {
-  filter: drop-shadow(2px 2px #f22d52);  
+  filter: drop-shadow(2px 2px #f22d52);
 }
 
 /* QUICK NAVIGATION STYLING */
@@ -289,16 +313,16 @@ main {
   position: relative;
   text-decoration: none;
   color: white;
-  font-family: var(--fstyle);
+  font-family: var(--fstyle1);
   letter-spacing: 0.3em;
   text-transform: uppercase;
   font-size: 1.3rem;
-  padding: 5px 5px 5px 10px;   
+  padding: 5px 5px 5px 10px;
   border: 1px;
   border-radius: 10px;
 }
 
-.quickNav-footer > div > ul > li > a:hover{
+.quickNav-footer > div > ul > li > a:hover {
   background: white;
   color: black;
 }

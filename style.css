@@ -6,6 +6,73 @@
   --fstyle2: "Cabin";
 }
 
+hr {
+  height: 10px;
+  background-color: red;
+  border: none;
+}
+
+/* KEYFRAMES */
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-800px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.fade-left {
+  animation: fade-left 1s 0.5s backwards;
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(800px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.fade-right {
+  animation: fade-right 1s 0.5s backwards;
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.fade-down {
+  animation: fade-down 1s 0.2s backwards;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.fade-up {
+  animation: fade-up 1s 0.2s backwards;
+}
+
 /* HEADER */
 header {
   background-color: burlywood;
@@ -62,12 +129,6 @@ navbar-nav {
   letter-spacing: 2px;
 }
 
-hr {
-  height: 10px;
-  background-color: red;
-  border: none;
-}
-
 .our-story-text > p,
 .mission-text > p,
 .vision-text > p {
@@ -75,7 +136,18 @@ hr {
   font-size: 18px;
 }
 
+.story-text.fade-left {
+  animation: fade-left 1s 0.7s backwards;
+}
+
+.owner-pic.fade-right {
+  animation: fade-right 1s 0.7s backwards;
+}
 /* MENU PAGE */
+.side-menu.fade-left {
+  animation: fade-left 1s 0.2s backwards;
+}
+
 .btp-btn {
   position: fixed;
   bottom: 0;
@@ -252,7 +324,7 @@ hr {
   font-family: var(--fstyle1);
   letter-spacing: 5px;
 }
-/* SOCIAL MEDIA ICONS STYLING */
+/* SOCIAL MEDIA ICONS ANIMATION */
 .icon {
   display: inline-flex;
   width: 45px;
@@ -260,8 +332,7 @@ hr {
   text-decoration: none;
   outline: 2px solid white;
   border-radius: 50%;
-  transition-property: outline-offset, outline-color, backfround-color,
-    background;
+  transition-property: outline-offset, outline-color, background;
   transition-duration: 0.25s;
 }
 

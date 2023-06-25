@@ -272,11 +272,45 @@ navbar-nav {
 }
 
 /* CONTACT US PAGE */
-.contact {
-  position: relative;
-  background-color: #00acee;
+body.contact-us-body {
+  background-image: url("./Photos/cuppa-joy-store.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
 }
 
+.contact-wrapper {
+  position: relative;
+}
+.contact-wrapper > h1 {
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--fstyle1);
+  font-size: 4rem;
+  letter-spacing: 2px;
+  filter: drop-shadow(5px 5px black);
+}
+
+.contactInfo-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+}
+.contactInfo-wrapper > .contact-box > .text,
+.contactInfo-wrapper > .contact-box > .text > a {
+  color: white;
+  text-decoration: none;
+}
+.contactInfo-wrapper > .contact-box > .text > a,
+.contactInfo-wrapper > .contact-box > .text > .contact-table-hours {
+  font-family: var(--fstyle2);
+  filter: drop-shadow(2px 2px black);
+}
+
+.contactInfo-wrapper > .contact-box > .text > h3 {
+  font-family: var(--fstyle1);
+  filter: drop-shadow(3px 3px black);
+}
 /* CONTACT INFO STYLING */
 .contact-box {
   position: relative;
@@ -298,7 +332,8 @@ navbar-nav {
   width: 45px;
   height: 45px;
   text-decoration: none;
-  outline: 2px solid black;
+  outline: 2px solid red;
+  outline-offset: 4px;
   border-radius: 50%;
   background: white;
 }

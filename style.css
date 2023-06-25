@@ -144,6 +144,34 @@ navbar-nav {
   animation: fade-right 1s 0.7s backwards;
 }
 /* MENU PAGE */
+.menu-banner {
+  position: relative;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu-banner > img {
+  min-width: 100vw;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.menu-banner > h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 1;
+  text-transform: uppercase;
+  font-family: var(--fstyle1);
+  font-size: 6rem;
+  letter-spacing: 2px;
+  filter: drop-shadow(5px 5px black);
+}
+
 .side-menu.fade-left {
   animation: fade-left 1s 0.2s backwards;
 }
@@ -165,10 +193,39 @@ navbar-nav {
   width: 100%;
 }
 /* DELIVERY PAGE */
+.delivery-banner {
+  position: relative;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.delivery-banner > img {
+  width: 100vw;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.delivery-banner > h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 1;
+  text-transform: uppercase;
+  font-family: var(--fstyle1);
+  font-size: 6rem;
+  letter-spacing: 2px;
+  filter: drop-shadow(5px 5px black);
+}
+
 .order-wrapper > h1 {
   text-transform: uppercase;
   font-family: var(--fstyle1);
   letter-spacing: 5px;
+  font-size: 4rem;
 }
 
 .delivery-logo > a > img {
@@ -176,6 +233,7 @@ navbar-nav {
   padding: auto;
 }
 
+/* ANIMATION FOR BACK OT MENU BTN */
 .button-menu {
   position: relative;
   border: 1px;

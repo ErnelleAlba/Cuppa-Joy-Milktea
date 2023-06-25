@@ -40,7 +40,7 @@ hr {
 }
 
 .fade-right {
-  animation: fade-right 1s 0.5s backwards;
+  animation: fade-right 1s 0.5s forwards;
 }
 
 @keyframes fade-down {

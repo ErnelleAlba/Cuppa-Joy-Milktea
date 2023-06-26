@@ -135,6 +135,11 @@ navbar-nav {
 .active {
   background-color: white;
 }
+
+.navbar-toggler {
+  border: 1px solid white;
+}
+
 /* HOME/LANDING PAGE */
 /* CAROUSEL STYLING */
 #carouselInterval {

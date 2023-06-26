@@ -748,7 +748,8 @@ body.contact-us-body {
 }
 
 /* QUICK NAVIGATION STYLING */
-.quickNav-footer > div > ul > li > a {
+.quickNav-footer > div > ul > li > a,
+.quickNav-footer > ul > li > a {
   position: relative;
   text-decoration: none;
   color: white;
@@ -761,7 +762,8 @@ body.contact-us-body {
   border-radius: 10px;
 }
 
-.quickNav-footer > div > ul > li > a:hover {
+.quickNav-footer > div > ul > li > a:hover,
+.quickNav-footer > ul > li > a:hover {
   background: white;
   color: black;
 }

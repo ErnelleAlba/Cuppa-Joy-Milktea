@@ -93,9 +93,14 @@ header.header-home {
   position: relative;
 }
 
+.offcanvas {
+  background-color: rgb(33, 37, 41);
+}
+
 /* NAVIGATION MENU */
 navbar-nav {
   position: relative;
+  justify-content: end;
 }
 
 .nav-item > a {
@@ -144,21 +149,13 @@ navbar-nav {
 /* CAROUSEL STYLING */
 #carouselInterval {
   margin-top: -100px;
-}
-
-.c-item {
   max-height: 100vh;
   overflow: hidden;
 }
 
 .c-img {
-  height: 100%;
-  object-fit: cover;
-}
-
-.carousel-item > img {
-  object-fit: cover;
   filter: brightness(0.4);
+  object-fit: fill;
 }
 
 .image-wrapper {
@@ -574,7 +571,7 @@ body.contact-us-body {
 /* CONTACT INFO STYLING */
 .contact-box {
   position: relative;
-  padding: 15px 0;
+  padding: 0 20px 28px;
 }
 
 .contact-box > .text {
@@ -652,11 +649,12 @@ body.contact-us-body {
   transform: translateY(-20px);
 }
 
-.message-form > form > .input-box > input[type="submit"] {
+.submit-btn {
   position: relative;
   border: 1px;
   border-radius: 5px;
-  width: 150px;
+  width: 180px;
+  padding: 10px 15px;
   background: #00acee;
   color: white;
   font-family: var(--fstyle1);
@@ -665,8 +663,8 @@ body.contact-us-body {
   z-index: 0;
 }
 
-.message-form > form > .input-box > input[type="submit"]:hover,
-.message-form > form > .input-box > input[type="submit"]:focus {
+.submit-btn:hover,
+.submit-btn:focus {
   background-color: white;
   color: black;
   transform: scale(1.2);

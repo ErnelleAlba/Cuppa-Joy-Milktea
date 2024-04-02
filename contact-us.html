@@ -23,16 +23,21 @@
     <div class="container-fluid px-5">
       <nav class="navbar navbar-expand-lg">
         
-        <a href="./index.html" class="navbar-brand">
+        <a href="./index.html" class="navbar-brand ms-xl-5 ps-xl-5 ms-sm-2 ps-sm-2">
            <img src="./Photos/brand-logo-white.png" alt="cuppa-joy-logo" width="200px"> 
         </a>    
        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav gap-5">
+        <div class="offcanvas offcanvas-end" id="navbarNav" tabindex="-1" aria-labelledby="navbarNav">
+          <div class="offcanvas-header">
+            <button type="button" class="btn text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+              <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff;"></i>
+            </button>
+          </div>
+          <ul class="offcanvas-body text-center justify-content-xl-end navbar-nav gap-3 gap-xl-5 gap-lg-4 gap-md-2 text-nowrap">
             <li class="nav-item"><a href="./index.html" class="nav-link text-uppercase"><span class="nav-title">Home</span></a></li>
             <li class="nav-item"><a href="./our-story.html" class="nav-link text-uppercase"><span class="nav-title">Our Story</span></a></li>
             <li class="nav-item"><a href="./menu.html" class="nav-link text-uppercase"><span class="nav-title">Menu</span></a></li>
@@ -126,7 +131,7 @@
 
         <div class="message-form col-lg-6 fade-right">          
           <h2>We'd like to hear from you!</h2>
-          <p>Use the from below to send us a message</p>
+          <p>Use the form below to send us a message</p>
           <form>
             <div class="input-box">
               <input type="text" name="" required>
@@ -145,7 +150,11 @@
               <span id="inputText">Type Your Message...</span>
             </div>
             <div class="input-box">
-              <input class="submit-btn" type="submit" value="Send Message">
+              <button type="submit" class="submit-btn">
+                <span>Send Message<i class="fa-sharp fa-solid fa-paper-plane ms-2" style="color: #ffffff;"></i> </span>
+                
+              </button>
+              
             </div>
           </form>         
         </div>
@@ -187,7 +196,7 @@
       </div>
 
         <!-- COPYRIGHT -->
-      <p class="text-light d-flex justify-content-center">&copy; 2023 Cuppa Joy | All Rights Reserved</p>
+      <p class="text-light d-flex justify-content-center">&copy; 2023 Cuppa Joy</p>
     </div>
   </footer>
 
